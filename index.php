@@ -6,7 +6,7 @@ include('my_Connection.php');
 include('logout.php');
 
 //remember me
-include('remember.php');
+include('remember_User_Data.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -15,7 +15,7 @@ include('remember.php');
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Car Sharing Website Final</title>
+  <title>Taxi Auto</title>
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="styling.css" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
@@ -206,15 +206,12 @@ include('remember.php');
               &times;
             </button>
             <h4 id="myModalLabel">
-            Anmelden:
+              Anmelden:
             </h4>
           </div>
           <div class="modal-body">
-
-            <!-- PHP file sending Login message -->
+            <!-- sending Login message -->
             <div id="loginmessage"></div>
-
-
             <div class="form-group">
               <label for="loginemail" class="sr-only">Email:</label>
               <input class="form-control" type="email" name="loginemail" id="loginemail" placeholder="Email"
@@ -235,12 +232,11 @@ include('remember.php');
                 Passwort vergessen?
               </a>
             </div>
-
           </div>
           <div class="modal-footer">
             <input class="btn green" name="login" type="submit" value="Login">
             <button type="button" class="btn btn-default" data-dismiss="modal">
-            Abbrechen
+              Abbrechen
             </button>
             <button type="button" class="btn btn-default pull-left" data-dismiss="modal" data-target="signupModal"
               data-toggle="modal">
@@ -262,14 +258,13 @@ include('remember.php');
               &times;
             </button>
             <h4 id="myModalLabel">
-            Online-App starten
+              Online-App starten
             </h4>
           </div>
           <div class="modal-body">
 
-            <!--Sign up message from PHP file-->
+            <!--Sign up message-->
             <div id="signupmessage"></div>
-
             <div class="form-group">
               <label for="username" class="sr-only">Benutzer:</label>
               <input class="form-control" type="text" name="username" id="username" placeholder="Username"
@@ -339,11 +334,8 @@ include('remember.php');
             </h4>
           </div>
           <div class="modal-body">
-
-            <!--forgot password message from PHP file-->
+            <!--forgot password message file-->
             <div id="forget_password_message"></div>
-
-
             <div class="form-group">
               <label for="forget_Email" class="sr-only">Email:</label>
               <input class="form-control" type="email" name="forget_Email" id="forget_Email" placeholder="Email"
@@ -369,7 +361,7 @@ include('remember.php');
     <div class="container">
       <p>Soft Outlet Metzingen Copyright &copy; 2024-
         <?php $today = date("Y");
-        echo $today ?>.
+        echo $today ?>
       </p>
     </div>
   </div>
